@@ -1,0 +1,201 @@
+.header_con{
+	height: 88px;
+	background: url(../img/headbg.jpg) repeat-x left bottom;
+}
+.header {
+    width: 80%;
+    height: 88px;
+    margin: 0 auto;
+    
+}
+.header .login {
+    float: right;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+a.login:hover {
+    color: #666;
+}
+.header .logo {
+    float: left;
+    width: 200px;
+    height: 70%;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+.header .logo-txt {
+    float: left;
+    font-size: 18px;
+    color: #666;
+    line-height: 88px;
+}
+.quc-contanier {
+    width: 1230px;
+    height: 500px;
+    margin: 60px;
+}
+.quc-img {
+   width: 550px;
+    height: 350px;
+    padding: 30px 50px;
+}
+.quc-content {
+	background: url(../img/banner3.jpg);
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+    z-index: 999;
+}
+.quc-login {
+    position: absolute;
+    top: 120px;
+    right: 80px;
+    width: 350px;
+    background-color: #fff;
+}
+.quc-top {
+    padding-top: 10px;
+    text-align: center;
+}
+.quc-top .quc-title{
+    font-size: 20px;
+    line-height: 1;
+}
+.quc-main {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 300px;
+}
+.quc-form {
+    position: relative;
+    z-index: 2;
+}
+.quc-field-has-option {
+    z-index: 400;
+    position: relative;
+}
+.quc-form-item {
+    margin-bottom: 20px;
+}
+.quc-input {
+    position: relative;
+    width: 100%;
+}
+.quc-panel-small .quc-input input {
+    width: 278px;
+}
+.quc-input input {
+    box-sizing: content-box;
+    outline: none;
+    width: 90%;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    display: inline-block;
+    color: #333;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px;
+}
+.quc-form .quc-button-list {
+    margin-top: 10px;
+}
+.quc-button {
+    font-size: 18px;
+}
+.quc-button-primary {
+    border-color: #36b447;
+    background-color: #36b447;
+    color: #fff;
+}
+.quc-button {
+    box-sizing: content-box;
+    white-space: nowrap;
+    outline: none;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    border-radius: 2px;
+    text-align: center;
+    width: 93%;
+    cursor: pointer;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+.quc-form-tips {
+	width: 93%;
+    margin: 0 auto;
+	height: 20px;
+    margin-top: 10px;
+    color: #6f6f6f;
+    font-size: 14px;
+}
+.quc-right {
+    float: right;
+}
+.quc-left {
+    float: left;
+}
+ a {
+	color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+}
+.quc-third-hd {
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+.quc-third-hd span {
+    position: relative;
+    padding: 0 5px;
+    top: 7px;
+    background-color: #fff;
+}
+.quc-third-bd table {
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.login-body table {
+    height: 100%;
+    margin: 0 auto;
+    width: 1200px;
+}
+.quc-third-bd td {
+    text-align: center;
+}
+
+.icon-qq,.icon-zhifubaox {
+    color: #4e9ff9;
+}
+.icon-weixin{
+	color: #5ec12a;
+}
+.iconfont {
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    letter-spacing: 0;
+    vertical-align: middle;
+}
+.footer{
+	border-top: 2px solid #09C762;
+	font-size: 16px;
+	text-align: center;
+}

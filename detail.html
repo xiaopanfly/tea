@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>茶叶详情</title>
+		<link rel="stylesheet" href="css/inside.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="layui-v2.4.5/layui/css/layui.css" />
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="layui-v2.4.5/layui/layui.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+
+	<body>
+		<div id="flexbox">
+			<div class="items">
+				<ul>
+					<li>
+						<a href="javascript:"><img src="img/my.png"></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="img/gouwuche.png"></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="img/xiaoxi.png"></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="img/shoucang.png"></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="img/liuyuan.png"></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="img/erweima.png"></a>
+					</li>
+					<li class="flextop">
+						<a href="#top"><img src="img/top.png"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="header" class="new_header">
+			<div class="header_top">
+				<div class="header_top_nav">
+					<ul class="header_top_left">
+						<li>
+							<a href="javascript:;">鑫云网络批发网 - 茶店供货商！</a>
+						</li>
+						<li>
+							<a href="login.html">请登录</a><span>  |</span>
+							<a href="register.html">免费注册</a>
+						</li>
+					</ul>
+					<ul class="header_top_right">
+						<li class="more-menu">
+							<a href="user.html">会员中心</a>
+							<div class="more-bd">
+								<div class="list">
+									<a href="#">我的订单</a>
+									<a href="#">我的评价</a>
+									<a href="#">我的余额</a>
+									<a href="#">我的收藏</a>
+									<a href="#">修改收货地址</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">手机版</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_main">
+				<div class="logo">
+					<a href="index.html"><img src="img/xinyun.png"></a>
+				</div>
+				<div class="search_box">
+					<form method="get" id="searchForm" name="searchForm">
+						<input class="sea_input" type="text" autocomplete="off">
+						<button type="submit" class="sea_submit">搜索</button>
+					</form>
+				</div>
+				<div class="header_search_hot"> <span>热搜榜：</span>
+					<a href="#" target="_blank">西湖龙井</a>
+					<a href="#" target="_blank">碧螺春</a>
+					<a href="#" target="_blank">黄山毛峰</a>
+					<a href="#" target="_blank">庐山云雾</a>
+					<a href="#" target="_blank">六安瓜片</a>
+					<a href="#" target="_blank">恩施玉露</a>
+				</div>
+			</div>
+			<div class="header_nav">
+				<div class="header_nav_bd">
+					<div class="main_nav" id="main_nav">
+						<div class="main_nav_link">
+							<a href="javascript:;">全部商品</a>
+						</div>
+					</div>
+					<div class="ng-nav-index">
+						<ul>
+							<li class="current">
+								<a href="index.html">网站首页</a>
+							</li>
+							<li>
+								<a href="greentea.html">绿茶系列</a>
+							</li>
+							<li>
+								<a href="redtea.html">红茶系列</a>
+							</li>
+							<li>
+								<a href="whitetea.html">白茶系列</a>
+							</li>
+							<li>
+								<a href="oolongtea.html">青茶系列</a>
+							</li>
+							<li>
+								<a href="yellowtea.html">黄茶系列</a>
+							</li>
+							<li>
+								<a href="blacktea.html">黑茶系列</a>
+							</li>
+							<li>
+								<a href="culture.html">淳香文化</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page">
+			<div class="detail_pro">
+				<div class="content">
+					<div class="left">
+						<div class="box">
+							<div class="tb-booth tb-pic tb-s310">
+								<a href=""><img src="img/13.jpg" alt="" class="jqzoom" /></a>
+								<div class="fd"></div>
+							</div>
+							<div class="max">
+								<img src="img/13.jpg">
+							</div>
+							<ul class="tb-thumb" id="thumblist">
+								<li class="tb-selected">
+									<div class="tb-pic tb-s40">
+										<a><img src="img/13.jpg" mid="img/13.jpg" big="img/13.jpg"></a>
+									</div>
+								</li>
+								<li>
+									<div class="tb-pic tb-s40">
+										<a><img src="img/14.jpg" mid="img/14.jpg" big="img/14.jpg"></a>
+									</div>
+								</li>
+								<li>
+									<div class="tb-pic tb-s40">
+										<a><img src="img/13.jpg" mid="img/13.jpg" big="img/13.jpg"></a>
+									</div>
+								</li>
+
+								<li>
+									<div class="tb-pic tb-s40">
+										<a><img src="img/13.jpg" mid="img/13.jpg" big="img/13.jpg"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dp_right">
+						<h2 class="tit">安溪陈年铁观音茶叶茶叶清香型送人自备最佳礼品250g</h2>
+						<div class="dp_price"><span>价格 </span><span class="c_num">300</span><span class="c_price">降价通知</span></div>
+						<div class="dp_follow">
+							<span class="c_follow">关注</span>
+							<a href="javascript:void(0)"><i class="iconfont icon-guanzhu1"></i></a>
+							<span class="c_collect">收藏</span><i class="iconfont icon-wankeicon-"></i>
+							<span class="c_collects">店铺收藏</span><i class="iconfont icon-wankeicon-"></i>
+							<span class="share">分享</span>
+							<a href="javascript:void(0)" class="share"><i class="iconfont icon-fenxiang1"></i></a>
+						</div>
+
+						<div class="dp_num">
+							<span class="w2">数量</span>
+							<div class="dp_md">
+								<a href="javascript:void(0);" class="minus">
+									<input type="button" value="-" id="minus" onclick="minus()">
+								</a>
+								<input type="text" value="1" id="number" onBlur="number()">
+								<a href="javascript:void(0);" class="add">
+									<input type="button" value="+" id="add" onclick="add()">
+								</a>
+							</div>
+
+						</div>
+						<div class="dp_buy">
+							<a class="zx_buy" href="">立即购买</a>
+							<a class="zx_car" href="">加入购物车</a>
+						</div>
+						<div class="dp_compy">
+							<div class="dp_tit">
+								<p>安溪观音茶厂</p>
+							</div>
+							<div class="dp_content">
+								<div class="dp_score">
+									<ul>
+										<li>
+											<p><span>描述</span></p>
+											<p class="up"><em id="gSatisfy">4.8</em><i></i></p>
+										</li>
+										<li>
+											<p><span>服务</span></p>
+											<p class="up"><em id="sSatisfy">5.0</em><i></i></p>
+										</li>
+										<li>
+											<p><span>物流</span></p>
+											<p class="up"><em id="dSatisfy">4.9</em><i></i></p>
+										</li>
+									</ul>
+								</div>
+								<div class="dp_enter">
+									<a href="shop.html" class="si-entry">进入店铺</a>
+									<a class="si-entry">收藏店铺</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="page-img">
+				<img src="img/gouwucheif.jpg">
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer">
+				<div class="footer_top">
+					<div class="footer_nav">
+						<div class="footer_nav_ul">
+							<h4>新手指南</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">购物指南</a>
+							</li>
+							<li>
+								<a href="#">购物流程</a>
+							</li>
+							<li>
+								<a href="#">卖家入门</a>
+							</li>
+							<li>
+								<a href="#">常见问题</a>
+							</li>
+							<li>
+								<a href="#">联系客服</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_nav">
+						<div class="footer_nav_ul">
+							<h4>采购商服务</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">找供应商</a>
+							</li>
+							<li>
+								<a href="#">采购平台</a>
+							</li>
+							<li>
+								<a href="#">找货神器</a>
+							</li>
+							<li>
+								<a href="#">企业信用</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_nav">
+						<div class="footer_nav_ul">
+							<h4>供应商服务</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">诚信通服务</a>
+							</li>
+							<li>
+								<a href="#">数字营销平台</a>
+							</li>
+							<li>
+								<a href="#">卖家服务</a>
+							</li>
+							<li>
+								<a href="#">物流服务</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_nav">
+						<div class="footer_nav_ul">
+							<h4>产品支付</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">微信支付</a>
+							</li>
+							<li>
+								<a href="#">支付宝支付</a>
+							</li>
+							<li>
+								<a href="#">分期付款</a>
+							</li>
+							<li>
+								<a href="#">货到付款</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_nav">
+						<div class="footer_nav_ul">
+							<h4>售后服务</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">售后政策</a>
+							</li>
+							<li>
+								<a href="#">退款说明</a>
+							</li>
+							<li>
+								<a href="#">退换货</a>
+							</li>
+							<li>
+								<a href="#">取消订单</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_bt">
+					<div class="footer_bt_first">
+						<p>关于我们 | 联系我们 | 联系客服 | 合作招商 | 商家帮助 | 营销中心 | 手机茶味 | 友情链接 | 销售联盟|茶味社区 | 风险监测 | 隐私政策 | 茶味公益</p>
+					</div>
+					<div class="footer_bt_first">
+						<p>茶味网安备11000002000088 号 | 京ICP证070359号 | 互联网药品信息服务资格证编号京)-经营性-2014- 00081新出发京零字第大120007 号</p>
+					</div>
+					<div class="footer_bt_first">
+						<p>互联网出版许可证编号新出网证(京)字150号 | 出版物经营许可证 | 网络文化经营许可证京网文[2014]2148-348号 | 违法和不良信息举报电话; 4006561155
+					</div>
+					<div class="footer_bt_first">
+						<p>Copyright。2004 一2018茶味cw.com版权所有 | 消费者维权热线: 4006067733经营证照 | (京)网械平台备字(2018)第00003号 | 营业执照</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function minus() {
+				//获取-号按钮
+				var minus = document.getElementById("minus");
+				//获取文本框
+				var number = document.getElementById("number");
+				if(number.value <= 1) {
+					//如果文本框的值小于1,则设置值为1
+					number.value = 1;
+				} else {
+					number.value = number.value - 1;
+				}
+			}
+
+			function number() {
+				var number = document.getElementById("number");
+				var value = number.value;
+				//如果文本值为空,设置为1
+				if(value == "") {
+					number.value = 1;
+				}
+				//如果文本值为非纯数字,设置为1
+				//isNaN()是否为非法数字
+				if(isNaN(value)) {
+					number.value = 1;
+				}
+				//如果文本值小于1,设置为1
+				if(parseInt(value) <= 1) {
+					number.value = 1;
+				}
+			}
+
+			function add() {
+				var add = document.getElementById("add");
+				var number = document.getElementById("number");
+				//parseInt() 将数值型字符串转换为数值
+				number.value = parseInt(number.value) + 1;
+			}
+			$(document).ready(function() {
+				$("#thumblist li a").hover(function() {
+					$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+					$(".jqzoom").attr('src', $(this).find("img").attr("mid"));
+					$(".jqzoom").attr('rel', $(this).find("img").attr("big"));
+					$('.max img').attr('src', $(this).find("img").attr("mid"));
+				});
+
+			});
+
+			var min = document.querySelector(".tb-booth"),
+				max = document.querySelector(".max"),
+				img = document.querySelector(".max img"),
+				fd = document.querySelector(".fd");
+			min.onmouseover = function() {
+				//1.鼠标覆盖显示max和fd
+				max.style.display = "block";
+				fd.style.display = "block";
+			}
+			//离开时隐藏
+			min.onmouseout = function() {
+				max.style.display = "none";
+				fd.style.display = "none";
+			}
+			//2.fd的移动范围
+			min.onmousemove = function() {
+				//鼠标触摸的点
+				var x = event.clientX - min.offsetLeft - fd.offsetWidth / 2;
+				var y = event.clientY - min.offsetTop - fd.offsetHeight / 2;
+				//最大移动距离
+				var maxX = min.clientWidth - fd.offsetWidth;
+				var maxY = min.clientHeight - fd.offsetHeight;
+				//边界判断
+				if(x <= 0) {
+					x = 0;
+				} else if(x >= maxX) {
+					x = maxX;
+				}
+				if(y <= 0) {
+					y = 0;
+				} else if(y >= maxY) {
+					y = maxY;
+				}
+				//fd的位置
+				fd.style.left = x + "px";
+				fd.style.top = y + "px";
+				//fd/min = max/img
+				//移动比例
+				var yidongX = x / maxX;
+				var yidongY = y / maxY;
+				//移动
+				//3.max的对应显示
+				// 对于大图而言 放大镜在小图上移动的比例 相当于img在可显示区域上移动的比例  放大镜右移等于图片左移
+				// 也就是本质上为img - max 然而需要负值 则*-1 简化后 为max-img
+				img.style.left = yidongX * (max.clientWidth - img.offsetWidth) + "px";
+				img.style.top = yidongY * (max.clientHeight - img.offsetHeight) + "px";
+			}
+
+			$('.share').on('click', function() {
+				layer.open({
+					title: '分享到',
+					type: 2,
+					shade: [0.7, '#f7f7f7'],
+					area: ['700px', '560px'],
+					btnAlign: 'c', //按钮居中
+					content: '<div style="padding: 20px 100px;">' + text + '</div>',
+					btn: '关闭全部',
+					yes: function() {
+						layer.closeAll();
+					}
+				});
+			});
+		</script>
+
+		<!--<script type="text/javascript" src="js/jquery.imagezoom.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".jqzoom").imagezoom();
+				$("#thumblist li a").click(function() {
+					$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+					$(".jqzoom").attr('src', $(this).find("img").attr("mid"));
+					$(".jqzoom").attr('rel', $(this).find("img").attr("big"));
+				});
+			});
+		</script>-->
+	</body>
+
+</html>

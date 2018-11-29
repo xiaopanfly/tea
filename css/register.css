@@ -1,0 +1,167 @@
+.header_con{
+	height: 88px;
+	background: url(../img/headbg.jpg) repeat-x left bottom;
+}
+.header {
+    width: 80%;
+    height: 88px;
+    margin: 0 auto;
+    
+}
+.header .login {
+    float: right;
+    margin-top: 50px;
+}
+.header .logo {
+    float: left;
+    width: 200px;
+    height: 70%;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+.header .logo-txt {
+    float: left;
+    font-size: 18px;
+    color: #666;
+    line-height: 88px;
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+.member-steps {
+	height: 46px;
+	border-bottom: 1px solid #e6e6e6;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.member-steps ul {
+	width: 480px;
+	margin: 0 auto;
+}
+
+.member-steps li {
+	display: inline;
+	float: left;
+	width: 170px;
+	padding-left: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.member-sumary {
+	text-align: center;
+	font-weight: bold;
+}
+
+.re-main{
+	padding: 20px 15%;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
+
+.input-container {
+	margin-top: 20px;
+	width: 100%;
+    background: #f7f7f7;
+    height: 42px;
+    border: 1px solid #d9d9d9;
+    border-radius: 21px;
+    position: relative;
+}
+.input_opacity{
+	display: block; 
+	position: absolute; 
+	cursor: text; 
+	float: left; 
+	z-index: 2; 
+	padding-left: 0px; 
+	padding-top: 10px;
+}
+.input-container .input-left {
+    width: 90px;
+}
+
+.input-container .input-left {
+	text-align: justify;
+    height: 100%;
+    border-right: 1px solid #d9d9d9;
+    padding: 0 1%;
+    line-height: 42px;
+}
+
+.input-container .input-left:after{display: inline-block ; content: ''; padding-left: 100%; }
+
+.l {
+    float: left;
+}
+.input-container .input-right {
+    height: 100%;
+    padding-right: 16px;
+    line-height: 42px;
+}
+.input-container .input-right {
+    height: 100%;
+    padding-right: 16px;
+    line-height: 42px;
+}
+.r {
+    float: right;
+}
+.get-code {
+    display: inline-block;
+    height: 100%;
+    background: #f7f7f7;
+    border: none;
+    color: #007dff;
+    cursor: pointer;
+    font-size: 14px;
+}
+.input-container .input-content {
+    height: 100%;
+    overflow: hidden;
+}
+.input-container .input-content input {
+    height: 100%;
+    width: 90%;
+    border: 0px;
+    padding: 0px 0px 0px 15px;
+    background: transparent;
+    outline: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+.input_opacity {
+    padding-top: 4px!important;
+    height: 85%;
+    width: 48%;
+    overflow: hidden;
+}
+.reg-btn{
+	margin-top: 20px;
+}
+.reg-btn .btn.sel {
+    background-color: #09C762;
+    border: none;
+    color: #fff;
+}
+.btn {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+}
+.footer{
+	border-top: 2px solid #09C762;
+	font-size: 16px;
+	text-align: center;
+}

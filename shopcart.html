@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>茶叶平台购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/inside.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="layui-v2.4.5/layui/css/layui.css">
+		<script type="text/javascript" src="layui-v2.4.5/layui/layui.js"></script>
+	</head>
+
+	<body>
+		<div id="flexbox">
+			<div class="items">
+				<ul>
+					<li>
+						<a href="javascript:"><img src="img/my.png"></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="img/gouwuche.png"></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="img/xiaoxi.png"></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="img/shoucang.png"></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="img/liuyuan.png"></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="img/erweima.png"></a>
+					</li>
+					<li class="flextop">
+						<a href="#top"><img src="img/top.png"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="header" class="new_header">
+			<div class="header_top">
+				<div class="header_top_nav">
+					<ul class="header_top_left">
+						<li>
+							<a href="javascript:;">鑫云网络批发网 - 茶店供货商！</a>
+						</li>
+						<li>
+							<a href="#">请登录</a><span>  |</span>
+							<a href="#">免费注册</a>
+						</li>
+					</ul>
+					<ul class="header_top_right">
+						<li class="more-menu">
+							<a href="#">会员中心</a>
+							<div class="more-bd">
+								<div class="list">
+									<a href="#">我的订单</a>
+									<a href="#">我的评价</a>
+									<a href="#">我的余额</a>
+									<a href="#">我的收藏</a>
+									<a href="#">修改收货地址</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">手机版</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="header_main">
+				<div class="logo">
+					<a href="#"><img src="img/xinyun.png"></a>
+				</div>
+				<div class="search_box">
+					<form method="get" id="searchForm" name="searchForm">
+						<input class="sea_input" type="text" autocomplete="off">
+						<input type="hidden">
+						<button type="submit" class="sea_submit">搜索</button>
+					</form>
+				</div>
+				<div class="header_search_hot"> <span>热搜榜：</span>
+					<a href="#" target="_blank">西湖龙井</a>
+					<a href="#" target="_blank">碧螺春</a>
+					<a href="#" target="_blank">黄山毛峰</a>
+					<a href="#" target="_blank">庐山云雾</a>
+					<a href="#" target="_blank">六安瓜片</a>
+					<a href="#" target="_blank">恩施玉露</a>
+				</div>
+			</div>
+			<div class="header_nav">
+				<div class="header_nav_bd">
+					<div class="main_nav" id="main_nav">
+						<div class="main_nav_link">
+							<a href="javascript:;">全部商品</a>
+						</div>
+					</div>
+					
+					<div class="ng-nav-index">
+						<ul>
+							<li class="current">
+								<a href="index.html">网站首页</a>
+							</li>
+							<li>
+								<a href="greentea.html">绿茶系列</a>
+							</li>
+							<li>
+								<a href="redtea.html">红茶系列</a>
+							</li>
+							<li>
+								<a href="whitetea.html">白茶系列</a>
+							</li>
+							<li>
+								<a href="oolongtea.html">青茶系列</a>
+							</li>
+							<li>
+								<a href="yellowtea.html">黄茶系列</a>
+							</li>
+							<li>
+								<a href="blacktea.html">黑茶系列</a>
+							</li>
+							<li>
+								<a href="culture.html">淳香文化</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content content-nav-base shopcart-content">
+			<div class="cart w1200">
+				<div class="cart-table-th">
+					<div class="th th-chk">
+						<div class="select-all">
+							<div class="cart-checkbox">
+								<input class="check-all check" id="allCheckked" type="checkbox" value="true">
+							</div>
+							<label>&nbsp;&nbsp;全选</label>
+						</div>
+					</div>
+					<div class="th th-item">
+						<div class="th-inner info">商品信息</div>
+					</div>
+					<div class="th th-price">
+						<div class="th-inner">单价</div>
+					</div>
+					<div class="th th-amount">
+						<div class="th-inner">数量</div>
+					</div>
+					<div class="th th-discount">
+						<div class="th-inner">折扣</div>
+					</div>
+					<div class="th th-sum">
+						<div class="th-inner">总价</div>
+					</div>
+					<div class="th th-op">
+						<div class="th-inner">操作</div>
+					</div>
+				</div>
+
+				<div class="shop_info">
+					<div class="shop_name">店铺：
+						<a href="javascript:;">清承堂茶叶旗舰店</a>
+					</div>
+				</div>
+				<div class="OrderList">
+					<div class="order-content" id="list-cont">
+						<ul class="item-content layui-clear">
+							<li class="th th-chk">
+								<div class="select-all">
+									<div class="cart-checkbox">
+										<input class="CheckBoxShop check" id="" type="checkbox" num="all" name="select-all" value="true">
+									</div>
+								</div>
+							</li>
+							<li class="th th-item">
+								<div class="item-cont">
+									<a href="javascript:;"><img src="img/hot4.png" alt=""></a>
+									<div class="text">
+										<div class="title">名称:西湖龙井</div>
+										<p><span>产品介绍:上市绿茶茶叶春茶龙井茶叶散装浓香型</span></p>
+									</div>
+								</div>
+							</li>
+							<li class="th th-price">
+								<span class="th-su">19.00</span>
+							</li>
+							<li class="th th-amount">
+								<div class="box-btn layui-clear">
+									<div class="less layui-btn">-</div>
+									<input class="Quantity-input" type="" name="" value="1" disabled="disabled">
+									<div class="add layui-btn">+</div>
+								</div>
+							</li>
+							<li class="th th-discount">
+								<span class="discount">/</span>
+							</li>
+							<li class="th th-sum">
+								<span class="sum">19.00</span>
+							</li>
+							<li class="th th-op">
+								<span class="collect-btn">移入收藏夹</span>
+								<span class="dele-btn">删除</span>
+							</li>
+						</ul>
+						<ul class="item-content layui-clear">
+							<li class="th th-chk">
+								<div class="select-all">
+									<div class="cart-checkbox">
+										<input class="CheckBoxShop check" id="" type="checkbox" num="all" name="select-all" value="true">
+									</div>
+								</div>
+							</li>
+							<li class="th th-item">
+								<div class="item-cont">
+									<a href="javascript:;"><img src="img/hot4.png" alt=""></a>
+									<div class="text">
+										<div class="title">名称:西湖龙井</div>
+										<p><span>产品介绍:上市绿茶茶叶春茶龙井茶叶散装浓香型</span></p>
+									</div>
+								</div>
+							</li>
+							<li class="th th-price">
+								<span class="th-su">19.00</span>
+							</li>
+							<li class="th th-amount">
+								<div class="box-btn layui-clear">
+									<div class="less layui-btn">-</div>
+									<input class="Quantity-input" type="" name="" value="1" disabled="disabled">
+									<div class="add layui-btn">+</div>
+								</div>
+							</li>
+							<li class="th th-discount">
+								<span class="discount">/</span>
+							</li>
+							<li class="th th-sum">
+								<span class="sum">19.00</span>
+							</li>
+							<li class="th th-op">
+								<span class="collect-btn">移入收藏夹</span>
+								<span class="dele-btn">删除</span>
+							</li>
+						</ul>
+						<ul class="item-content layui-clear">
+							<li class="th th-chk">
+								<div class="select-all">
+									<div class="cart-checkbox">
+										<input class="CheckBoxShop check" id="" type="checkbox" num="all" name="select-all" value="true">
+									</div>
+								</div>
+							</li>
+							<li class="th th-item">
+								<div class="item-cont">
+									<a href="javascript:;"><img src="img/hot4.png" alt=""></a>
+									<div class="text">
+										<div class="title">名称:西湖龙井</div>
+										<p><span>产品介绍:上市绿茶茶叶春茶龙井茶叶散装浓香型</span></p>
+									</div>
+								</div>
+							</li>
+							<li class="th th-price">
+								<span class="th-su">19.00</span>
+							</li>
+							<li class="th th-amount">
+								<div class="box-btn layui-clear">
+									<div class="less layui-btn">-</div>
+									<input class="Quantity-input" type="" name="" value="1" disabled="disabled">
+									<div class="add layui-btn">+</div>
+								</div>
+							</li>
+							<li class="th th-discount">
+								<span class="discount">/</span>
+							</li>
+							<li class="th th-sum">
+								<span class="sum">19.00</span>
+							</li>
+							<li class="th th-op">
+								<span class="collect-btn">移入收藏夹</span>
+								<span class="dele-btn">删除</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="FloatBarHolder layui-clear">
+					<div class="th th-chk">
+						<div class="select-all">
+							<div class="cart-checkbox">
+								<input class="check-all check" id="" name="select-all" type="checkbox" value="true">
+							</div>
+							<label>&nbsp;&nbsp;已选<span class="Selected-pieces">0</span>件</label>
+						</div>
+					</div>
+					<div class="th batch-deletion">
+						<span class="batch-dele-btn">批量删除</span>
+					</div>
+					<div class="th batch-collection">
+						<span class="batch-collect-btn">移入收藏夹</span>
+					</div>
+					<div class="th batch-sharetion">
+						<span class="batch-share-btn">分享</span>
+					</div>
+					<div class="th Settlement">
+						<button class="layui-btn">付款</button>
+					</div>
+					<div class="th total">
+						<p>合算(不包含运费)：<span class="pieces-total">0</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tabs-img">
+			<div class="mt">
+				<ul class="tabs">
+					<li class="records">
+						<a href="#none"><span>最近浏览过</span></a>
+					</li>
+					<li class="recommend">
+						<a href="#none"><span>热门推荐</span></a>
+					</li>
+					<li class="footprint">
+						<a href="#none"><span>我的足迹&gt;&gt;</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="wrap-line">
+				<div class="floater" style="width: 82px;"></div>
+			</div>
+			<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 4</div>
+				<div class="swiper-slide">Slide 5</div>
+				<div class="swiper-slide">Slide 6</div>
+				<div class="swiper-slide">Slide 7</div>
+				<div class="swiper-slide">Slide 8</div>
+				<div class="swiper-slide">Slide 9</div>
+				<div class="swiper-slide">Slide 10</div>
+				<div class="swiper-slide">Slide 11</div>
+				<div class="swiper-slide">Slide 12</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<!--<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>-->
+		</div>
+		</div>
+		
+
+		<div id="footer">
+			<div class="footer">
+				<div class="footer_top">
+					<div class="footer_nav">
+						<div class="footer_nav_ul">
+							<h4>新手指南</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">购物指南</a>
+							</li>
+							<li>
+								<a href="#">购物流程</a>
+							</li>
+							<li>
+								<a href="#">卖家入门</a>
+							</li>
+							<li>
+								<a href="#">常见问题</a>
+							</li>
+							<li>
+								<a href="#">联系客服</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_nav">
+						<div class="footer_nav_ul">
+							<h4>采购商服务</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">找供应商</a>
+							</li>
+							<li>
+								<a href="#">采购平台</a>
+							</li>
+							<li>
+								<a href="#">找货神器</a>
+							</li>
+							<li>
+								<a href="#">企业信用</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_nav">
+						<div class="footer_nav_ul">
+							<h4>供应商服务</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">诚信通服务</a>
+							</li>
+							<li>
+								<a href="#">数字营销平台</a>
+							</li>
+							<li>
+								<a href="#">卖家服务</a>
+							</li>
+							<li>
+								<a href="#">物流服务</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_nav">
+						<div class="footer_nav_ul">
+							<h4>产品支付</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">微信支付</a>
+							</li>
+							<li>
+								<a href="#">支付宝支付</a>
+							</li>
+							<li>
+								<a href="#">分期付款</a>
+							</li>
+							<li>
+								<a href="#">货到付款</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_nav">
+						<div class="footer_nav_ul">
+							<h4>售后服务</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">售后政策</a>
+							</li>
+							<li>
+								<a href="#">退款说明</a>
+							</li>
+							<li>
+								<a href="#">退换货</a>
+							</li>
+							<li>
+								<a href="#">取消订单</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_bt">
+					<div class="footer_bt_first">
+						<p>关于我们 | 联系我们 | 联系客服 | 合作招商 | 商家帮助 | 营销中心 | 手机茶味 | 友情链接 | 销售联盟|茶味社区 | 风险监测 | 隐私政策 | 茶味公益</p>
+					</div>
+					<div class="footer_bt_first">
+						<p>茶味网安备11000002000088 号 | 京ICP证070359号 | 互联网药品信息服务资格证编号京)-经营性-2014- 00081新出发京零字第大120007 号</p>
+					</div>
+					<div class="footer_bt_first">
+						<p>互联网出版许可证编号新出网证(京)字150号 | 出版物经营许可证 | 网络文化经营许可证京网文[2014]2148-348号 | 违法和不良信息举报电话; 4006561155
+					</div>
+					<div class="footer_bt_first">
+						<p>Copyright。2004 一2018茶味cw.com版权所有 | 消费者维权热线: 4006067733经营证照 | (京)网械平台备字(2018)第00003号 | 营业执照</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/swiper.js"></script>
+		<script type="text/javascript">
+			layui.config({
+				base: 'js/util/' //你存放新模块的目录，注意，不是layui的模块目录
+			}).use(['mm', 'jquery', 'element', 'car'], function() {
+				var mm = layui.mm,
+					$ = layui.$,
+					element = layui.element,
+					car = layui.car;
+				car.init()
+			});
+
+			var swiper = new Swiper('.swiper-container', {
+				slidesPerView: 4,
+				spaceBetween: 30,
+				slidesPerGroup: 4,
+				loop: true,
+				loopFillGroupWithBlank: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+	</body>
+
+</html>

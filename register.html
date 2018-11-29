@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/register.css">
+		<link rel="stylesheet" href="css/index_phone.css">
+		<link rel="stylesheet" href="layui-v2.4.5/layui/css/layui.css" />
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="layui-v2.4.5/layui/layui.all.js"></script>
+		<script src="layui-v2.4.5/layui/layui.js"></script>
+	</head>
+
+	<body>
+		<div class="header_con">
+			<div class="header">
+				<a href="login.html" class="login">我已经注册，马上登录&gt;</a>
+				<div class="logo">
+					<a href="index.html"><img src="img/xinyun.png"></a>
+				</div>
+				<div class="logo-txt">欢迎注册</div>
+			</div>
+		</div>
+		<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+			<ul class="layui-tab-title">
+				<li class="layui-registered layui-this">企业注册</li>
+				<li id="layui-registered">商家注册</li>
+			</ul>
+			<div class="layui-tab-content">
+				<div class="layui-tab-item layui-show">
+					<p class="member-sumary ">无企业营业执照的个人用户请注册商家账户。权益如下：做个人实名认证；作为买家身份采购；</p>
+					<div class="re-main">
+						<div class="input-container">
+							<div class="l input-left">
+								用户名
+							</div>
+							<div class="input-content">
+								<label class="input_opacity">
+									<input type="text" placeholder="请输入用户名" autocomplete="off" class="username-input text" name="username">
+								</label>
+							</div>
+						</div>
+						<div class="input-container">
+							<div class="l input-left">
+								企业名称
+							</div>
+							<div class="input-content">
+								<label class="input_opacity">
+									<input type="text" placeholder="请输入营业执照上的公司名称" autocomplete="off" class="company-input text" name="company">
+								</label>
+							</div>
+						</div>
+						<div class="input-container">
+							<div class="l input-left">
+								联系人姓名
+							</div>
+							<div class="input-content">
+								<label class="input_opacity">
+									<input type="text" placeholder="请输入真实姓名" autocomplete="off" class="name-input text" name="realname" maxlength="32">
+								</label>
+							</div>
+						</div>
+						<div class="input-container">
+							<div class="l input-left">
+								手机号码
+							</div>
+							<div class="input-content">
+								<label class="input_opacity">
+									<input type="text" placeholder="请输入11位号码" autocomplete="off" class="phone-input text" name="phone" maxlength="11">
+								</label>
+							</div>
+						</div>
+						<div class="input-container">
+							<div class="l input-left">
+								短信验证码
+							</div>
+							<div class="r input-right">
+								<input type="button" class="get-code dbtn2" autocomplete="off" value="获取验证码">
+							</div>
+							<div class="input-content">
+								<label class="input_opacity">
+									<input type="text" placeholder="请输入验证码" class="verify vam ime-disabled text" name="verification"  maxlength="8">
+								</label>
+							</div>
+						</div>
+						<div class="set-password">
+							<div class="input-container">
+								<div class="l input-left">
+									密码
+								</div>
+								<div class="input-content">
+									<label class="input_opacity">
+										<input type="password" placeholder="请输入密码" class="pwd-input text" name="password" maxlength="32">
+									</label>
+								</div>
+							</div>
+							<div class="input-container">
+								<div class="l input-left">
+									确认密码
+								</div>
+								<div class="input-content">
+									<label class="input_opacity">
+										<input type="password" placeholder="请再次输入密码" class="newpwd-input text vam" name="checkPassword" maxlength="32">
+									</label>
+								</div>
+							</div>
+							<!-- 注册按钮 -->
+							<div class="reg-btn" align="center">
+								<input type="button" class="btn btn-reg sel" value="注册" tabindex="7">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-tab-item">
+					<p class="member-sumary">无企业营业执照的个人用户请注册商家账户。权益如下：做个人实名认证；作为买家身份采购；</p>
+					<div class="re-main">
+						<div class="input-container">
+							<div class="l input-left">
+								用户名
+							</div>
+							<div class="input-content">
+								<label class="input_opacity">
+									<input type="text" placeholder="请输入用户名" autocomplete="off" class="pwd-input text" name="username" maxlength="32">
+								</label>
+							</div>
+						</div>
+						<div class="input-container">
+							<div class="l input-left">
+								手机号码
+							</div>
+							<div class="input-content">
+								<label class="input_opacity">
+									<input type="text" placeholder="请输入11位号码" autocomplete="off" class="phone-input text" name="phone" maxlength="11">
+								</label>
+							</div>
+						</div>
+						<div class="input-container">
+							<div class="l input-left">
+								短信验证码
+							</div>
+							<div class="r input-right">
+								<input type="button" class="get-code dbtn2" autocomplete="off" value="获取验证码">
+							</div>
+							<div class="input-content">
+								<label class="input_opacity">
+									<input type="text" placeholder="请输入验证码" class="verify vam ime-disabled text" maxlength="8">
+								</label>
+							</div>
+						</div>
+						<div class="set-password">
+							<div class="input-container">
+								<div class="l input-left">
+									密码
+								</div>
+								<div class="input-content">
+									<label class="input_opacity">
+										<input type="password" placeholder="请输入密码" autocomplete="off" class="pwd-input text" name="password" maxlength="32">
+									</label>
+								</div>
+							</div>
+							<div class="input-container">
+								<div class="l input-left">
+									确认密码
+								</div>
+								<div class="input-content">
+									<label class="input_opacity">
+										<input  type="password" placeholder="请再次输入密码" autocomplete="off" class="newpwd-input text vam" name="checkPassword" maxlength="32">
+									</label>
+								</div>
+							</div>
+							<!-- 注册按钮 -->
+							<div class="reg-btn" align="center">
+								<input type="button" class="btn btn-reg sel" value="注册" tabindex="7">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>关于我们/联系我们/商家入驻/广告服务/店铺装修/友钱链接/销营联盟/Engih site</p>
+		</div>
+
+		<script>
+			layer.open({
+				title: '用户注册协议',
+				type: 2,
+				shade: [0.7, '#f7f7f7'],
+				area: ['700px', '560px'],
+				btnAlign: 'c', //按钮居中
+				content: ['layer.html'],
+				btn: ['同意注册'],
+				yes: function(index, layero) {
+					layer.closeAll();
+				}
+			});
+			$('.layui-registered').on('click', function() {
+				layer.open({
+					title: '用户注册协议',
+					type: 2,
+					shade: [0.7, '#f7f7f7'],
+					area: ['700px', '560px'],
+					btnAlign: 'c', //按钮居中
+					content: ['layer.html'],
+					btn: ['同意注册'],
+					yes: function(index, layero) {
+						layer.closeAll();
+					}
+				});
+			})
+			$('#layui-registered').on('click', function() {
+				layer.open({
+					title: '用户注册协议',
+					type: 2,
+					shade: [0.7, '#f7f7f7'],
+					area: ['700px', '560px'],
+					btnAlign: 'c', //按钮居中
+					content: ['layer.html'],
+					btn: ['同意注册'],
+					yes: function(index, layero) {
+						layer.closeAll();
+					}
+
+				});
+			})
+			
+			
+			
+			$(function() {
+				$('.btn-reg').on('click',function() {
+					let username = $('.username-input').val();
+					let company = $('.company-input').val();
+					let realname = $('.name-input').val();
+					let phone = $('.phone-input').val();
+					let pwd = $('.pwd-input').val();
+					let newpwd = $('.newpwd-input').val();
+					
+					
+					var pattern = /^1[34578]\d{9}$/;
+					var username = /^[a-zA-Z0-9_-]{4,16}$/;
+					
+					if(username == null || username == ""){
+									layer.alert("用户名不能为空");
+						return;
+					}
+					if(company == null || company ==""){
+									layer.alert("企业名称不能为空");
+						return;
+					}
+					if(realname == null || realname == ""){
+									layer.alert("联系人姓名不能为空");
+						return;
+					}
+					if(phone == null || phone == ""){
+									layer.alert("手机号码不能为空");
+						return;
+					}
+					if(!(pattern.test(phone))){
+									layer.alert("手机号码输入不正确");
+						return;
+					}
+					
+					if(pwd == null || pwd == ""){
+									layer.alert("请输入密码");
+						return;
+					}
+					
+					if(pwd.length < 6){
+									layer.alert("密码不能小于6位");
+						return;
+					}
+					
+					if(newpwd == null || newpwd == "" ){
+									layer.alert("请输入确认密码");
+						return;
+					}
+						
+					if(pwd != newpwd){
+									layer.alert("两次密码输入不正确");
+						return;
+					}
+				})
+				
+				$(".layui-layer-setwin").click(function(){
+					window.location.href="index.html";
+				});
+			})
+
+			
+		</script>
+	</body>
+
+</html>
