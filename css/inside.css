@@ -135,11 +135,6 @@ i {
 }
 
 
-
-
-
-
-
 #m-content{
 	width: 100%;
 	padding-top:65px;
@@ -147,6 +142,13 @@ i {
 .m-container{
 	width: 85%;
 	margin:0 auto;
+}
+
+.m-container>div {
+	display: none;
+}
+.m-container .selection {
+	display: block;
 }
 
 .nav-sub-panel {
@@ -683,6 +685,15 @@ i {
     margin-top:40px;
     overflow: auto;
 }
+.m-container-main > div {
+	display: none;
+}
+
+.m-container-main .selection {
+	display: block;
+}
+
+
 .m-loading{
 	margin-bottom: 30px;
 }
@@ -790,7 +801,7 @@ i {
 }
 .m-next-right button{
 	padding: 5px;
-    margin: 10px;
+    margin: 10px 0 0 10px;
     width: 80px;
 }
 .m-next {
@@ -1109,8 +1120,68 @@ i {
     padding: 0 10px;
     font-size: 12px;
 }
-.m-goods button.search-btn{
-	width: 160px;
+
+.m-member{
+	height: 100%;
+    padding-left: 3%;
+    margin-top: 40px;
+    overflow: auto;
+}
+.m-member .sBox .search-box-left span{
+	width: 114px;
+}
+.m-member select{
+    width: 160px;
+    height: 28px;
+    margin-right: 20px;
+    vertical-align: middle;
+    outline: 0;
+    color: #333;
+    line-height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.m-member button.search-btn{
+	width: 100px;
+    background-color: #1E9FFF;
+    border-color: #1E9FFF;
+    color: #fff!important;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 28px;
+    border-radius: 3px;
+    margin: 0 -10px 0px 56px;
+    font-size: 12px;
+}
+.m-logistics{
+	height: 100%;
+    padding-left: 3%;
+    margin-top: 40px;
+    overflow: auto;
+}
+.m-logistics .logistics {
+    width: 100%;
+    font-size: 18px;
+    margin: 30px 0;
+}
+.m-logistics .logistics span.num {
+    color: #007DFF;
+}
+.m-table .logridtable {
+    width: 100%;
+    color: #333333;
+    border-color: #666666;
+}
+.m-table .logridtable td {
+    padding: 20px 0;
+    border: none;
+    font-size: 14px;
+    text-align: left;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+.m-logisticsservice button.search-btn {
+    width: 100px;
     background-color: #1E9FFF;
     border-color: #1E9FFF;
     color: #fff!important;
@@ -1119,6 +1190,73 @@ i {
     height: 28px;
     line-height: 28px;
     font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 16px;
+}
+.m-logisticsservice button.reset-button-box {
+    margin-left: 20px;
+    color: #999 !important;
+    background: #fff;
+}
+.m-logisticsservice select {
+    width: 160px;
+    height: 28px;
+    margin-right: 20px;
+    vertical-align: middle;
+    outline: 0;
+    color: #333;
+    line-height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.sBox .boxsreen{
+	border-bottom:1px solid #DDDDDD;
+}
+
+
+.searchbox {
+	display: inline-block;
+    margin-left: 140px;
+    width: 300px;
+    height: 34px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.searchbox .searchinput {
+    width: 221px;
+    margin: 5px;
+    height: 20px;
+    line-height: 20px;
+    color: #bbb;
+    outline: 0;
+    border: 0;
+}
+
+.searchbox .searchbtn {
+    font-size: 14px;
+    height: 30px;
+    width: 61px;
+    padding-left: 12px;
+    border: 0;
+    cursor: pointer;
+    letter-spacing: 5px;
+    overflow: hidden;
+}
+
+.m-table .m-sreen{
+	width: 100%;
+    color: #333333;
+    border-color: #666666;
+}
+.m-table .m-sreen th {
+    padding: 10px;
+    border-top: 1px solid #C9C9C9;
+    text-align: center;
+    border-color: #666666;
 }
 /*订单end*/
 
