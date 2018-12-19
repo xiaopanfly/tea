@@ -4,47 +4,214 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>买家信息</title>
+		<link rel="stylesheet" href="css/bus.css" />
+		<script type="text/javascript" src="js/index.js" ></script>
 	</head>
 
 	<body>
-		<div class="businesstop">
-			<div class="">
-				<img src="img/xinyun.png">
-			</div>
-			<div class="log-txt">茶叶平台</div>
-			<div class="search_box">
-				<form method="get" id="searchForm" name="searchForm">
-					<input class="sea_input" type="text" autocomplete="off">
-					<button type="submit" class="sea_submit">搜索</button>
-				</form>
+		<div class="head">
+			<div class="businesstop">
+				<div class="bus-img">
+					<img src="img/xinyun.png">
+				</div>
+				<div class="log-txt">茶叶平台</div>
+				<div class="search_box">
+					<form method="get" id="searchForm" name="searchForm">
+						<input class="sea_input" type="text" autocomplete="off" placeholder="请输入搜索内容">
+						<button type="submit" class="sea_submit">搜索</button>
+					</form>
+				</div>
 			</div>
 		</div>
-
-		<div class="business">
-			<div class="b-nav">
+		<div class="content">
+			<div class="sub-nav expand">
 				<ul>
-					<li>
-						<div class="link">全部功能</div>
+					<li class="all">
+						<a class="hex-hover active" href="javascript:">全部功能</a>
 					</li>
-					<li>
-						<div class="link">我的购物车</div>
+					<li class="shopping">
+						<a class="hex-hover" href="javascript:">我的购物车</a>
 					</li>
-					<li>
-						<div class="link">我的收藏</div>
+					<li class="collect">
+						<a class="hex-hover" href="javascript:">我的收藏</a>
 					</li>
-					<li>
-						<div class="link">已买过的商品</div>
+					<li class="buyed">
+						<a class="hex-hover" href="javascript:">已买过的商品</a>
 					</li>
-					<li>
-						<div class="link">发票申请</div>
+					<li class="bill">
+						<a class="hex-hover" href="javascript:">发票申请</a>
 					</li>
-					<li>
-						<div class="link">评价管理</div>
+					<li class="evaluate">
+						<a class="hex-hover" href="javascript:">评价管理</a>
 					</li>
-					<li>
-						<div class="link">商品发布</div>
+					<li class="refund">
+						<a class="hex-hover" href="javascript:">退款管理</a>
 					</li>
 				</ul>
+			</div>
+			<div class="clear"></div>
+			<div class="payment">
+				<div class="b-header">
+					<div class="payment-header">
+						<div class="list">
+							<ul>
+								<li class="head-nav active">
+									<a href="#">待付款1</a>
+								</li>
+								<li class="head-nav">
+									<a href="#">待发货1</a>
+								</li>
+								<li class="head-nav">
+									<a href="#">待收货1</a>
+								</li>
+								<li class="head-nav">
+									<a href="#">待评价1</a>
+								</li>
+								<li class="head-nav">
+									<a href="#">退款1</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="b-table">
+					<div class="tabclass">
+						<div class="cart-table-th">
+							<div class="th th-item">
+								<div class="th-inner">宝贝</div>
+							</div>
+							<div class="th th-price">
+								<div class="th-inner">单价</div>
+							</div>
+							<div class="th th-amount">
+								<div class="th-inner">数量</div>
+							</div>
+							<div class="th th-discount">
+								<div class="th-inner">实际付款</div>
+							</div>
+							<div class="th th-sum">
+								<div class="th-inner">交易状态</div>
+							</div>
+							<div class="th th-op">
+								<div class="th-inner">交易操作</div>
+							</div>
+						</div>
+	
+						<div class="b-shoplist">
+							<ul class="item-content">
+								<li class="th th-item">
+									<div class="item-cont">
+										<a href="javascript:;"><img src="img/detail/17.jpg" alt="" width="100%"></a>
+										<div class="text">
+											<div class="title">名称:西湖龙井</div>
+											<p><span>产品介绍:上市绿茶茶叶春茶龙井茶叶散装浓香型</span></p>
+										</div>
+									</div>
+								</li>
+								<li class="th th-price">
+									<span class="num-btn">￥126</span>
+								</li>
+								<li class="th th-num">
+									<span class="write-btn">1</span>
+								</li>
+								<li class="th th-prices">
+									<span class="write-btn">￥126</span>
+								</li>
+								<li class="th th-discount">
+									<span class="write-btn">待付款</span>
+								</li>
+								<li class="th th-counts">
+									<span class="write-btn"><a href="#">立即付款</a></span>
+								</li>
+							</ul>
+						</div>
+						<div class="b-shoplist">
+							<ul class="item-content">
+								<li class="th th-item">
+									<div class="item-cont">
+										<a href="javascript:;"><img src="img/detail/17.jpg" alt="" width="100%"></a>
+										<div class="text">
+											<div class="title">名称:西湖龙井</div>
+											<p><span>产品介绍:上市绿茶茶叶春茶龙井茶叶散装浓香型</span></p>
+										</div>
+									</div>
+								</li>
+								<li class="th th-price">
+									<span class="num-btn">￥126</span>
+								</li>
+								<li class="th th-num">
+									<span class="write-btn">1</span>
+								</li>
+								<li class="th th-prices">
+									<span class="write-btn">￥126</span>
+								</li>
+								<li class="th th-discount">
+									<span class="write-btn">待付款</span>
+								</li>
+								<li class="th th-counts">
+									<span class="write-btn"><a href="#">立即付款</a></span>
+								</li>
+							</ul>
+						</div>
+						<div class="b-shoplist">
+							<ul class="item-content">
+								<li class="th th-item">
+									<div class="item-cont">
+										<a href="javascript:;"><img src="img/detail/17.jpg" alt="" width="100%"></a>
+										<div class="text">
+											<div class="title">名称:西湖龙井</div>
+											<p><span>产品介绍:上市绿茶茶叶春茶龙井茶叶散装浓香型</span></p>
+										</div>
+									</div>
+								</li>
+								<li class="th th-price">
+									<span class="num-btn">￥126</span>
+								</li>
+								<li class="th th-num">
+									<span class="write-btn">1</span>
+								</li>
+								<li class="th th-prices">
+									<span class="write-btn">￥126</span>
+								</li>
+								<li class="th th-discount">
+									<span class="write-btn">待付款</span>
+								</li>
+								<li class="th th-counts">
+									<span class="write-btn"><a href="#">立即付款</a></span>
+								</li>
+							</ul>
+						</div>
+						<div class="b-shoplist">
+							<ul class="item-content">
+								<li class="th th-item">
+									<div class="item-cont">
+										<a href="javascript:;"><img src="img/detail/17.jpg" alt="" width="100%"></a>
+										<div class="text">
+											<div class="title">名称:西湖龙井</div>
+											<p><span>产品介绍:上市绿茶茶叶春茶龙井茶叶散装浓香型</span></p>
+										</div>
+									</div>
+								</li>
+								<li class="th th-price">
+									<span class="num-btn">￥126</span>
+								</li>
+								<li class="th th-num">
+									<span class="write-btn">1</span>
+								</li>
+								<li class="th th-prices">
+									<span class="write-btn">￥126</span>
+								</li>
+								<li class="th th-discount">
+									<span class="write-btn">待付款</span>
+								</li>
+								<li class="th th-counts">
+									<span class="write-btn"><a href="#">立即付款</a></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
