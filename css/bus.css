@@ -1,3 +1,4 @@
+/**************商家start*********************/
 *{
 	margin: 0;
 	padding: 0;
@@ -50,8 +51,8 @@ ul,li{
 	float: left;
 	width: 308px;
 	margin: 5px;
-	height: 20px;
-	line-height: 20px;
+	height: 22px;
+	line-height: 22px;
 	color: #bbb;
 	outline: 0;
 	border: 0;
@@ -115,16 +116,19 @@ ul,li{
 	text-decoration: none;
     color: #000;
 }
+/**************全部功能start*********************/
 .content{
 	width: 100%;
     overflow: hidden;
 }
-.payment{
+
+.all,.shopping,.collect,.buyed,.bill,.evaluate,.refund{
 	width: 85%;
     float: left;
 }
 
-.payment-header{
+.all-header,.shopping-header,.collect-header,
+.buyed-header,.bill-header,.evaluate-header,.refund-header{
 	width: 90%;
     margin: 0 auto;
     border-bottom: 1px solid #999;
@@ -146,7 +150,7 @@ ul,li{
 	text-decoration: none;
 	color: #000;
 }
-.list .active a{
+a.active{
 	color:#4E9FF9;
 }
 .b-table{
@@ -227,5 +231,25 @@ ul,li{
     text-align: left;
     box-sizing: border-box;
 }
+.all-shoping>.shopping{
+	display: none;
+}
+.all-shoping>.active{
+	display: block;
+}
+/***************全部功能end********************/
+/************我的购物车start*******************/
 
+/************我的购物车end*********************/
 
+/************评价管理start*******************/
+.b-table .th-people {
+    width: 25%;
+}
+.b-table .th-comment {
+    width: 25%;
+}
+.b-table .th-oper {
+    width: 20%;
+}
+/************评价管理end*********************/
