@@ -120,11 +120,17 @@ $(function() {
 	$('.expand li>a').on('click', function() {
 		$(this).addClass('active');
 		$(this).parent('li').siblings().children('a').removeClass('active');
-
 		let cls = $(this).parent('li').data('class');
 		console.log(cls);
 		$('.all-shoping .'+cls).addClass('active').show().siblings().removeClass('active').hide();
-
+	})
+	
+	$('.list li>a').on('click', function() {
+		$(this).addClass('active');
+		$(this).parent('li').siblings().children('a').removeClass('active');
+		let cls = $(this).parent('li').data('class');
+		console.log(cls);
+		$('.b-table .'+cls).addClass('active').show().siblings().removeClass('active').hide();
 	})
 
 })

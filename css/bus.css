@@ -116,7 +116,7 @@ ul,li{
 	text-decoration: none;
     color: #000;
 }
-/**************全部功能start*********************/
+/**************我的购物车start*********************/
 .content{
 	width: 100%;
     overflow: hidden;
@@ -128,7 +128,7 @@ ul,li{
 }
 
 .all-header,.shopping-header,.collect-header,
-.buyed-header,.bill-header,.evaluate-header,.refund-header{
+.buyed-header,.evaluate-header,.refund-header{
 	width: 90%;
     margin: 0 auto;
     border-bottom: 1px solid #999;
@@ -203,15 +203,15 @@ a.active{
     position: relative;
     clear: both;
 }
-.b-shoplist .item-content .th {
+.item-content .th {
     line-height: 24px;
     text-align: center;
     width: 14%;
 }
-.b-shoplist .item-content a{
+.item-content a{
 	width: 90%;
 }
-.b-shoplist .item-content .th a{
+.item-content .write-btn a{
     color: #FF6600;
     text-decoration: none;
 }
@@ -224,24 +224,102 @@ a.active{
 .text{
 	padding-left: 20px;
 }
-.b-shoplist .item-content .th-item {
+.item-content .th-item {
     position: relative;
     z-index: 1;
     width: 30%;
     text-align: left;
     box-sizing: border-box;
 }
-.all-shoping>.shopping{
+.all-shoping>div{
 	display: none;
 }
 .all-shoping>.active{
 	display: block;
 }
-/***************全部功能end********************/
-/************我的购物车start*******************/
-
+.b-table>div{
+	display: none;
+}
+.b-table>.active{
+	display: block;
+}
 /************我的购物车end*********************/
 
+/************发票start*******************/
+.bill-header{
+	width: 90%;
+    margin: 0 auto;
+}
+.b-bill{
+	padding:20px 0;
+}
+.b-bill .publicbill{
+	font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    padding-left: 5px;
+}
+.b-bill .abill{
+	font-size: 18px;
+    color: #3366CC;
+    text-decoration: none;
+    margin-left: 50px;
+}
+.addbill .addbillbtn{
+	width: 120px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: cornflowerblue;
+    border-width: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+.dialog{    
+	width: 370px;
+    height: 200px;
+    border: solid 1px #b5b0b0;
+    border-radius: 5px;
+    position: absolute;
+    left: 35%;
+    bottom: 35%;
+    background: #eee;
+    line-height: 40px;
+    padding-left: 30px;
+    display: none;
+    font-size: 16px;
+    z-index: 999;
+}
+.dialog .altbtn{
+	margin-top: 20px;
+    margin-left: 140px;
+}
+.dialog .altbtn .sure{
+	width: 80px;
+    height: 26px;
+    line-height: 26px;
+    color: #000;
+    background:#fff;
+    border-width: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+.dialog .altbtn .fade{
+	margin-left: 10px;
+	width: 80px;
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    background: cornflowerblue;
+    border-width: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+/************发票end*********************/
 /************评价管理start*******************/
 .b-table .th-people {
     width: 25%;
@@ -253,3 +331,17 @@ a.active{
     width: 20%;
 }
 /************评价管理end*********************/
+/************退货换货start*******************/
+.b-table .th-reamount {
+    width: 14%;
+}
+.b-table .th-time {
+    width: 14%;
+}
+.b-table .th-serchtype {
+    width: 14%;
+}
+.b-table .th-restate{
+	width: 14%;
+}
+/************退货换货end*********************/
